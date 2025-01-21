@@ -1,8 +1,8 @@
 import { useState, useReducer } from 'react'
-import TodoReducer from '../components/todoReducer';
-import Todo from '../components/todo';
-import TextInput from '../components/textInput';
-import SubmitBtn from '../components/submitBtn';
+import TodoReducer from '../components/TodoReducer';
+import Todo from '../components/Todo';
+import TextInput from '../components/TextInput';
+import SubmitBtn from '../components/SubmitBtn';
 
 
 function App() {

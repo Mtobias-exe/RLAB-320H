@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-function todo() {
+function Todo({ title, dispatch, id }) {
   return (
-    <div>todo</div>
-  )
+    <div>
+      <span>{title}</span>
+      <button onClick={() => dispatch({ type: 'toggle-todo', payload: { id } })}>Toggle</button>
+      <button onClick={() => dispatch({ type: 'remove-todo', payload: { id } })}>Remove</button>
+    </div>
+  );
 }
 
-export default todo
+
+export default Todo;
