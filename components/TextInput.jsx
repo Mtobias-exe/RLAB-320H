@@ -1,9 +1,15 @@
 import React from 'react'
 
-function textInput() {
+function TextInput({state, setState}) {
   return (
-    <div>textInput</div>
+    <input
+    type = "text"
+    value= {state}
+    onChange={(e) => setState(e.target.value)}
+    />
+   
   )
 }
 
-export default textInput
+
+export default TextInput
