@@ -1,9 +1,17 @@
 import React from 'react'
+import Button from './Button'
 
-function submitBtn() {
+
+function SubmitBtn({className, children, dispatch, type, payload}) {
   return (
-    <div>submitBtn</div>
+    <Button
+    onClick={() => dispatch({ type: type, payload: payload })}
+    className={className}
+  >
+    {children}
+  </Button>
   )
 }
 
-export default submitBtn
+
+export default SubmitBtn
